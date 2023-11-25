@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YesilRüya.com </title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-success bg-gradient fixed-top"
+    >
+      <!--fixed-top ile navbarı sabitleyip scrolla beraber hareket etmesini sağladık-->
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold bigger" href="#">YesilRüya <i class="fa-brands fa-envira minik"></i> com</a>
+        <button
+          class="navbar-toggler mx-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <!--justify-content-end ile sağa attık-->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#carouselExampleIndicators">Ana Sayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ekip"
+                >Fotoğrafçılarımız</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galery">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#iletisim">İletişim</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- slider -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/s4.jpg" class="d-block w-100 img-slider" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/s2.jpg" class="d-block w-100 img-slider" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/s3.jpg" class="d-block w-100 img-slider" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/s5.jpg" class="d-block w-100 img-slider" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- about -->
+    <section class="p-5 text-center aboutt" id="hakkimizda">
+      <div class="container">
+        <h2 class="mb-5 fw-bold">HAKKIMIZDA</h2>
+
+        <hr class="ayrac"/><i class="fa-brands fa-pagelines ibeyaz"></i>
+
+        <p>
+          YeşilRüya, tutkulu doğa fotoğrafçılarından oluşan bir ekibin bir
+          araya gelmesiyle ortaya çıktı. Her birimiz, doğayı anlama ve onunla
+          uyum içinde yaşama arzusuyla yanıp tutuşuyoruz. Çekimlerimizde doğanın
+          özünü yakalamaya çalışırken, aynı zamanda doğaya olan saygımızı ve
+          sevgimizi yansıtmak istiyoruz.
+        </p>
+
+        <p>
+          Misyonumuz, doğayı sevgi, saygı ve hayranlıkla görmek isteyen herkesi
+          bilinçlendirmek ve ilham vermek. Fotoğraf sanatını kullanarak, doğanın
+          güzelliklerini keşfetmeye teşvik etmek ve korunmasına yönelik bir
+          farkındalık oluşturmak istiyoruz. Vizyonumuz ise, doğa
+          fotoğrafçılığını bir yaşam tarzı haline getirmek ve herkesi çevresine
+          duyarlı bir gözle bakmaya teşvik etmek. Sürdürülebilirlik, doğal
+          yaşamın korunması ve doğanın içinde barındırdığı hikayeleri paylaşma
+          konusundaki tutkumuzla, doğanın gücünü bir araya getiriyoruz.
+        </p>
+      </div>
+    </section>
+
+    <!-- photographers -->
+    <section class="p-5 text-center" id="ekip">
+        <div class="container">
+            <h2 class="mb-5 fw-bold">FOTOĞRAFÇILARIMIZ</h2>
+
+            <hr class="ayrac"/><i class="fa-brands fa-pagelines igri"></i>
+
+            <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4">
+                <div class="col">
+                  <div class="card h-100 shadow ekip">
+                    <img src="img/ekip1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Jasper Riley</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100 shadow ekip">
+                    <img src="img/ekip3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Leila Hart</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="card h-100 shadow ekip">
+                    <img src="img/ekip2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Elena Foster</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow ekip">
+                      <img src="img/ekip4.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Felix Turner</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card h-100 shadow ekip">
+                      <img src="img/ekip5.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Camila Hayes</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card h-100 shadow ekip">
+                      <img src="img/ekip4.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Theo Crawford</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card h-100 shadow ekip">
+                      <img src="img/ekip6.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Miles Lawson</h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card h-100 shadow ekip">
+                      <img src="img/ekip3.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Sienna Barrett</h5>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+
+        </div>
+    </section>
+
+    <!-- galery -->
+    <section class="p-5 text-center galery" id="galery">
+        <div class="container">
+            <h2 class="mb-5 fw-bold">GALERİ</h2>
+
+            <hr class="ayrac"/><i class="fa-brands fa-pagelines ibeyaz"></i>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <figure class="figure">
+                        <a href="img/r1.jpg">
+                        <img src="img/r1.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <figure class="figure">
+                        <a href="img/r2.jpg">
+                        <img src="img/r2.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <figure class="figure">
+                        <a href="img/r3.jpg">
+                        <img src="img/r3.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                    </a>
+                    </figure>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <figure class="figure">
+                        <a href="img/r4.jpg">
+                        <img src="img/r4.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                        </a>
+                    </figure>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <figure class="figure">
+                        <img src="img/r7.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                    </figure>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <figure class="figure">
+                        <img src="img/r6.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                    </figure>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <figure class="figure">
+                        <img src="img/r5.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                    </figure>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <figure class="figure">
+                        <img src="img/r8.jpg" class="figure-img img-fluid rounded shadow" alt="...">
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="p-5 text-center contact" id="iletisim">
+      <div class="container">
+    
+        <h2 class="mb-5 fw-bold">İLETİŞİM</h2>
+    
+        <hr class="ayrac" />
+        <i class="fab fa-pagelines igri"></i>
+    
+        <form action="" class="col-md-10 text-left m-auto">
+    
+          <div class="form-group row my-3">
+            <label for="ad" class="col-md-4 col-form-label text-left">Adınız:</label>
+            <div class="col-md-8">
+              <input type="text" id="ad" name="ad" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group row my-3">
+            <label for="soyad" class="col-md-4 col-form-label text-left">Soyadınız:</label>
+            <div class="col-md-8">
+              <input type="text" id="soyad" name="ad" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group row my-3">
+            <label for="mail" class="col-md-4 col-form-label text-left">Email:</label>
+            <div class="col-md-8">
+              <input type="email" id="mail" name="ad" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group row my-3">
+            <label for="mesaj" class="col-md-4 col-form-label text-left">Mesajınız:</label>
+            <div class="col-md-8">
+              <textarea name="" id="mesaj" cols="30" rows="5" class="col-md-8 form-control" readonly></textarea>
+            </div>
+          </div>
+
+          <div class="form-group row my-3 p-2 d-flex justify-content-end">
+            <button type="submit" class="col-md-3 btn btn-success">Gönder</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <div class="bg-success bg-gradient text-light text-center">
+      <p class="align-middle p-4 mb-0"><span>Tüm Hakları Saklıdır &copy; 2023</span><br> <!--mb-0 ile aşağıda çıkan boşluğu kaldırdık-->
+        <span>Designed by <b>Serhat Akhan</b></span>
+      </p>
+    </div>
+    
+  </body>
+</html>

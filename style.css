@@ -1,0 +1,75 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.bigger{
+    margin-left: 15px;
+    transition: all .3s ease;
+}
+
+.bigger:hover{
+    transform: scale(1.1);
+}
+
+.minik{
+    font-size: 15px;
+}
+
+
+
+.img-slider{
+    height: 100vh;
+}
+
+
+
+.aboutt{
+    background-color: #ededed;
+}
+
+.ayrac{
+    border: 2px solid #28a745;
+    max-width: 250px;
+    margin: 25px auto;
+}
+
+.ibeyaz{
+    color: #28a745;
+    font-size: 50px;
+    position: relative; /*oynatabilmek için relative verdik. top özelliğine kullanabilelim diye*/
+    top: -58px;
+    border: 10px solid #ededed;
+    background-color: #ededed;
+}
+
+.igri{
+    color: #28a745;
+    font-size: 50px;
+    position: relative;
+    top: -58px;
+    border: 10px solid #fff;
+    background-color: #fff;
+}
+
+
+.ekip{
+    opacity: .8;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.ekip:hover{
+    opacity: 1;
+}
+
+
+.galery{
+    background-color: #ededed;
+}
+
+
+.figure:hover{
+    opacity: .9;
+    transition: .3s ease;
+}
